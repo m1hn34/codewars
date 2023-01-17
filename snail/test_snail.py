@@ -1,0 +1,24 @@
+# Python3
+# Pytest script for snail.py
+
+from snail import snail
+
+
+def test_0():
+    array = [[1, 2, 3],
+             [4, 5, 6],
+             [7, 8, 9]]
+    
+    expected = [1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+    assert(snail(array) == expected)
+
+def test_1():
+    array = [[1, 2, 3],
+             [8, 9, 4],
+             [7, 6, 5]]
+    
+    expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    assert(snail(array) == expected)
+
