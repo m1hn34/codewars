@@ -27,4 +27,4 @@ print("long-but-fast")
 print(timeit.repeat(stmt=test_code, setup=import_module))
 
 print("short-but-slow")
-print(timeit.timeit(stmt=test_code_2, setup=import_module))
+print(timeit.repeat(stmt=test_code_2, setup=import_module))
