@@ -21,7 +21,7 @@ git clone https://github.com/m1hn34/codewars.git
 
 # Tests
 
-Run the tests in a CLI or your preferred terminal
+Run the tests in terminal.
 
 Unit tests:
 
