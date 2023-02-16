@@ -59,7 +59,8 @@ months = {
 }
 
 
-def driverL(data):
+# 1st Method long
+def driver_1(data):
     dv_code = ""
 
     # surname - 5
@@ -101,15 +102,7 @@ def driverL(data):
     return dv_code.upper()
 
 
-# function driver
-print(driverL(["John", "James", "Smith", "01-Jan-2000", "M"]))
-print("SMITH001010JJ9AA")
-
-
-# refactored for best practice
-
-# from datetime import datetime
-
+# 2nd Method short
 def driver(data):
     first, middle, last, dob, gender = data
     try:
@@ -125,3 +118,8 @@ def driver(data):
         str(d.year),
         first,
         middle if middle else '9')
+
+
+# Debug
+print(driver(["John", "James", "Smith", "01-Jan-2000", "M"]))
+print("SMITH001010JJ9AA")
