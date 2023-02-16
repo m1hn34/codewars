@@ -32,5 +32,5 @@ pytest -v test_file.py
 Speed tests:
 
 ```bash
-python3.10 speed_test_file.py
+python3 speed_test_file.py
 ```
