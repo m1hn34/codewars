@@ -5,7 +5,7 @@ import timeit
 import_module = "import random"
 
 test_code_1 = '''
-def driver_1(data):
+def driver(data):
     dv_code = ""
 
     # surname - 5

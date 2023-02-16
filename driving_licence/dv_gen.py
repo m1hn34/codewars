@@ -60,7 +60,7 @@ months = {
 
 
 # 1st Method long
-def driver_1(data):
+def driver(data):
     dv_code = ""
 
     # surname - 5
@@ -103,7 +103,7 @@ def driver_1(data):
 
 
 # 2nd Method short
-def driver(data):
+def driver_2(data):
     first, middle, last, dob, gender = data
     try:
         d = datetime.strptime(dob, '%d-%b-%Y')
