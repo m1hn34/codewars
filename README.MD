@@ -9,7 +9,7 @@ If you're lucky, you might find some katas which have multiple methods of solvin
 
 If you find multimple methods be sure to check the kata folder for a file that starts with ```speed_```. It is a timeit speed test on every method included in the kata solution.
 
-I also include some PyTest scripts with test for the solutions.
+I also included some PyTest scripts with tests for the solutions.
 
 # Installation
 
