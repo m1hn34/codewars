@@ -7,7 +7,7 @@ including those that are incomplete.
 
 If you're lucky, you might find some katas which have multiple methods of solving it. Some of those methods are taken directly form the Solutions page since I find them to be very close to mine.
 
-If you find multimple methods be sure to check the kata folder for a file that starts with "speed_". It is a timeit speed test on every method included in the kata solution.
+If you find multimple methods be sure to check the kata folder for a file that starts with ```speed_```. It is a timeit speed test on every method included in the kata solution.
 
 I also include some PyTest scripts with test for the solutions.
 
