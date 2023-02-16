@@ -11,15 +11,26 @@ If you find multimple methods be sure to check the kata folder for a file that s
 
 I also include some PyTest scripts with test for the solutions.
 
+# Installation
+
+Clone the repo with:
+
+```bash
+git clone https://github.com/m1hn34/codewars.git
+```
+
 # Tests
+
 Run the tests in a CLI or your preferred terminal
 
 Unit tests:
-```
+
+```bash
 pytest -v test_file.py
 ```
 
 Speed tests:
-```
+
+```bash
 python3.10 speed_test_file.py
 ```
