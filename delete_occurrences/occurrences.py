@@ -8,8 +8,11 @@ With list [20,37,20,21] and number 1, the result would be [20,37,21].
 '''
 
 
-# 1st method
-def delete_nth(order, max_e):
+# 1st method - fastest
+from collections import Counter
+
+
+def delete_nth_1(order, max_e):
     occurrences = {}
     result = []
 
@@ -23,4 +26,24 @@ def delete_nth(order, max_e):
             result.append(elem)
 
     # order[:] = result
+    return result
+
+
+# 2nd method
+def delete_nth_2(order, max_e):
+    ans = []
+    for o in order:
+        if ans.count(o) < max_e:
+            ans.append(o)
+    return ans
+
+
+# 3rd method - slowest
+def delete_nth(order, max_e):
+    c = Counter()
+    result = []
+    for element in order:
+        if c[element] < max_e:
+            c[element] += 1
+            result.append(element)
     return result
