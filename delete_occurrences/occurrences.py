@@ -7,11 +7,10 @@ being in the result 3 times, and then take 3, which leads to [1,2,3,1,2,3].
 With list [20,37,20,21] and number 1, the result would be [20,37,21].
 '''
 
-
-# 1st method - fastest
 from collections import Counter
 
 
+# 1st method - fastest
 def delete_nth_1(order, max_e):
     occurrences = {}
     result = []
