@@ -26,6 +26,13 @@ Run the tests in terminal.
 Unit tests:
 
 ```bash
+pytest test_file.py
+```
+
+Optional flag "-v" is used for a verbose output.
+This helps when tests are failing.
+
+```bash
 pytest -v test_file.py
 ```
 
