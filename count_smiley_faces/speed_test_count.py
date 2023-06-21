@@ -1,5 +1,4 @@
 import timeit
-from re import findall
 
 import_module = "import random"
 
@@ -24,6 +23,8 @@ def count_smileys(arr):
 
 
 test_code_2 = '''
+from re import findall
+
 def count_smileys_2(arr):
     return len(list(findall(r"[:;][-~]?[)D]", " ".join(arr))))
 '''
