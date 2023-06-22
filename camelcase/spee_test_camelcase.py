@@ -1,13 +1,8 @@
-# Complete the solution so that the function will break up camel casing, using
-# a space between words.
+import timeit
 
-# Example
+import_module = "import random"
 
-# solution("camelCasing") == "camel Casing"
-
-
-# My solution - detailed - using re
-
+test_case_1 = """
 import re
 
 
@@ -20,9 +15,10 @@ def solution(s):
         result += ' '
     return result.strip()
 
+"""
 
-# My solution - without re
 
+test_case_2 = """
 def solution2(s):
     result = ''
     for c in s:
@@ -30,14 +26,20 @@ def solution2(s):
             return result.join(' ' + c)
         else:
             return c
+"""
 
-# Short solution - simpler & faster
 
-
+test_case_3 = """
 def solution3(s):
     return ''.join(' ' + c if c.isupper() else c for c in s)
+"""
 
 
-# Function driver
+print("1st Method:")
+print(timeit.repeat(stmt=test_case_1, setup=import_module))
 
-print(solution2('camelCase'))
+print("2nd Method:")
+print(timeit.repeat(stmt=test_case_2, setup=import_module))
+
+print("3rd Method")
+print(timeit.repeat(stmt=test_case_3, setup=import_module))
