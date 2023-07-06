@@ -1,6 +1,7 @@
 .DS_Store
 .pytest_cache
-__pycache__*
+**/__pycache__/
 .vscode
 *.un~
 *.py~
+test.py
