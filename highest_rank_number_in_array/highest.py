@@ -32,7 +32,7 @@ def highest_rank_1(arr):
 
     return max(max_rank)
 
-print("Method 1 -> " + str(highest_rank_1([1, 1, 2, 2, 3])))
+print(f"Method 1 -> {highest_rank_1([1, 1, 2, 2, 3])}")
 print("Expected -> " + str(2))
 print()
 
@@ -52,8 +52,8 @@ def highest_rank_2(arr):
 
     return max(max_n)
 
-print("Method 2 -> " + str(highest_rank_2([1, 1, 2, 2, 3])))
-print("Expected -> " + str(2))
+print(f"Method 2 -> {highest_rank_2([1, 1, 2, 2, 3])}")
+print("Expected -> 2")
 print()
 
 
@@ -61,7 +61,7 @@ print()
 def highest_rank_3(arr):
     return max(sorted(arr, reverse=True), key=arr.count)
 
-print("Method 3 -> " + str(highest_rank_3([1, 1, 2, 2, 3])))
-print("Expected -> " + str(2))
+print(f"Method 3 -> {highest_rank_3([1, 1, 2, 2, 3])}")
+print("Expected -> 2")
 print()
 
