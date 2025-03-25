@@ -43,3 +43,8 @@ def test_7():
     output = "J. K. Rowling"
     assert(initialize_names(name) == output)
 
+def test_8():
+    name = "Albert McMahon O'Mara"
+    output = "Albert M. O'Mara"
+    assert(initialize_names(name) == output)
+
